@@ -1,0 +1,46 @@
+@use '__colors.scss' as c;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Outfit', sans-serif;
+	background-color: c.$body-color;
+	.box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		height: 450px;
+		width: 320px;
+        border-radius: 15px;
+		background-color: c.$bgc-color;
+        padding: 10px;
+
+		img {
+            padding: 5px 5px 15px 5px;
+			width: 290px;
+			height: 290px;
+			border-radius: 20px;
+		}
+		h1 {
+			padding: 0 20px;
+            padding-bottom: 5px;
+			font-size: 20px;
+            text-align: center;
+		}
+		.description {
+			padding: 5px 25px 5px 25px;
+			font-size: 15px;
+			color: c.$text-color;
+            text-align: center;
+		}
+	}
+}
